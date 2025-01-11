@@ -54,8 +54,8 @@ function App() {
               delay: 0.5,
             }}
             style={{
-              fontSize: "2rem",
-              color: "black",
+              fontSize: "3rem",
+              color: "white",
             }}
           >
             Neki is beautiful.
