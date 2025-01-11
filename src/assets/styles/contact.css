@@ -1,0 +1,60 @@
+.contact {
+  padding: 250px 0 120px;
+}
+
+.contact__title {
+  color: #fff;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 60px;
+}
+
+.contact__box {
+  width: 550px;
+  margin: 0 auto;
+  padding: 130px 0;
+  border-radius: 15px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+}
+
+a:has(.contact__glasses) {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s ease-in-out;
+}
+
+a:has(.contact__glasses):hover {
+  background: #128857;
+}
+
+.contact__glasses {
+  width: 120px;
+  height: 120px;
+}
+
+.contact__icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 42px;
+}
+
+.contact__text {
+  color: #000;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
