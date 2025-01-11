@@ -2,6 +2,7 @@
   width: 100%;
   padding-top: 176px;
   position: relative;
+  overflow: hidden;
 }
 
 .hobbies::before {
@@ -33,6 +34,8 @@
 }
 
 .hobbies__cards {
+  position: relative;
+  z-index: 1;
   display: grid;
   grid-template-columns: 280px 280px 280px;
   gap: 100px;
