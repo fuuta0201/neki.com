@@ -1,5 +1,6 @@
 import ChevronDown from "../assets/images/icons/chevron-down.svg";
 import "../assets/styles/hero.css";
+import ScrollDown from "./ScrollDown";
 
 const Hero = () => {
   return (
@@ -21,6 +22,7 @@ const Hero = () => {
         <br />
         My soul.
       </h1>
+      <ScrollDown />
     </div>
   );
 };
