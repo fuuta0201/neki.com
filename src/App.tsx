@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import What from "./components/What";
 import Hobbies from "./components/Hobbies";
 import Contact from "./components/Contact";
+import Copyright from "./components/Copyright";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <What />
       <Hobbies />
       <Contact />
+      <Copyright />
     </main>
   );
 }
