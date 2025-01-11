@@ -6,7 +6,7 @@ import Bed from "../assets/images/icons/bed.svg";
 
 const Hobbies = () => {
   return (
-    <div className="hobbies">
+    <div className="hobbies" id="hobbies">
       <div className="hobbies__inner">
         <h2 className="hobbies__title">Neki’s hobbies</h2>
         <div className="hobbies__cards">

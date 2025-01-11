@@ -1,6 +1,10 @@
+#what {
+  margin-top: -100px;
+  padding-top: 100px;
+}
+
 .what {
   width: 100%;
-  padding-top: 250px;
   position: relative;
   margin-bottom: 313px;
 }

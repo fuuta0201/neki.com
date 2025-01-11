@@ -3,7 +3,7 @@ import "../assets/styles/what.css";
 
 const What = () => {
   return (
-    <div className="what">
+    <div className="what" id="what">
       <h2 className="what__title">What is Neki?</h2>
       <img src={Logo} alt="" className="what__image" />
       <p className="what__text">
