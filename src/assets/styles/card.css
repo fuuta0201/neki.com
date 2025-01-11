@@ -1,0 +1,39 @@
+.card {
+  padding: 40px 30px 30px;
+  border-radius: 15px;
+  background: #fff;
+  display: grid;
+  grid-template-rows: 80px auto auto;
+  gap: 15px;
+  justify-content: center;
+}
+
+.card__image {
+  grid-area: 1 / 1;
+  width: 80px;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  margin-inline: auto;
+}
+
+.card__title {
+  grid-area: 2 / 1;
+  margin: 0;
+  margin-bottom: 15px;
+  color: #128857;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.card__text {
+  grid-area: 3 / 1;
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  margin: 0;
+}
