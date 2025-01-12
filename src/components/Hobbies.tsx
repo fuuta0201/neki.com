@@ -1,18 +1,18 @@
-import { motion, useScroll, useTransform } from "framer-motion";
-import "../assets/styles/hobbies.css";
-import Card from "./Card";
-import Pc from "../assets/images/icons/pc.svg";
-import People from "../assets/images/icons/people.svg";
-import Bed from "../assets/images/icons/bed.svg";
-import FadeInUpWrapper from "./animation/FadeInUpWrapper";
-import Pattern1 from "../assets/images/icons/pattern-1.svg";
-import Pattern2 from "../assets/images/icons/pattern-2.svg";
+import { motion, useScroll, useTransform } from 'framer-motion';
+import '../assets/styles/hobbies.css';
+import Card from './Card';
+import Pc from '../assets/images/icons/pc.svg';
+import People from '../assets/images/icons/people.svg';
+import Bed from '../assets/images/icons/bed.svg';
+import FadeInUpWrapper from './animation/FadeInUpWrapper';
+import Pattern1 from '../assets/images/icons/pattern-1.svg';
+import Pattern2 from '../assets/images/icons/pattern-2.svg';
 
 const Hobbies = () => {
   const { scrollYProgress } = useScroll();
 
-  const pattern1Y = useTransform(scrollYProgress, [0, 1], [100, -300]);
-  const pattern2Y = useTransform(scrollYProgress, [0, 1], [200, -300]);
+  const pattern1Y = useTransform(scrollYProgress, [0, 1], [100, -250]);
+  const pattern2Y = useTransform(scrollYProgress, [0, 1], [200, -250]);
   return (
     <div className="hobbies" id="hobbies">
       <div className="hobbies__inner">
@@ -63,7 +63,7 @@ const Hobbies = () => {
         src={Pattern1}
         alt="Pattern 1"
         style={{
-          position: "absolute",
+          position: 'absolute',
           bottom: 10,
           left: 50,
           translateY: pattern1Y,
@@ -76,7 +76,7 @@ const Hobbies = () => {
         src={Pattern2}
         alt="Pattern 2"
         style={{
-          position: "absolute",
+          position: 'absolute',
           bottom: 10,
           right: 11,
           translateY: pattern2Y,
