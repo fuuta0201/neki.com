@@ -1,10 +1,19 @@
-import AnchorLink from "react-anchor-link-smooth-scroll";
-import ChevronDown from "../assets/images/icons/chevron-down.svg";
-import "../assets/styles/hero.css";
-import ScrollDown from "./ScrollDown";
-import { motion } from "framer-motion";
+import { useState, useEffect } from 'react';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+import ChevronDown from '../assets/images/icons/chevron-down.svg';
+import '../assets/styles/hero.css';
+import ScrollDown from './ScrollDown';
+import { motion } from 'framer-motion';
+import TitleSlideInWrapper from './animation/TitleSlideInWrapper';
 
 const Hero = () => {
+  const [isShowTitle, setIsShowTitle] = useState<boolean>(false);
+
+  useEffect(() => {
+    setTimeout(function () {
+      setIsShowTitle(true);
+    }, 5000);
+  }, []);
   return (
     <div className="hero">
       <div className="hero__links">
@@ -24,13 +33,15 @@ const Hero = () => {
           </AnchorLink>
         </motion.div>
       </div>
-      <h1 className="hero__title">
-        Neki
-        <br />
-        is
-        <br />
-        My soul.
-      </h1>
+      {isShowTitle && (
+        <h1 className="hero__title">
+          <TitleSlideInWrapper text="Neki" />
+          <br />
+          <TitleSlideInWrapper text="is" />
+          <br />
+          <TitleSlideInWrapper text="My soul." />
+        </h1>
+      )}
       <ScrollDown />
     </div>
   );

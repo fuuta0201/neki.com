@@ -1,0 +1,18 @@
+.js-letter {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.anime-show-up__word {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.anime-show-up__letter {
+  display: inline-block;
+  transform: translateY(1em);
+  opacity: 0;
+  transition:
+    transform 0.4s ease,
+    opacity 0.4s ease;
+}
