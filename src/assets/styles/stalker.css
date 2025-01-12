@@ -1,0 +1,24 @@
+#stalker {
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background: url('../images/icons/mouse-cursor.svg') no-repeat;
+  background-size: contain;
+  transition:
+    transform 0.2s ease-out,
+    width 0.5s,
+    height 0.5s;
+  z-index: 999;
+}
+
+#stalker.hov_ {
+  width: 84px;
+  height: 84px;
+  transition:
+    transform 0.2s ease-out,
+    width 0.5s,
+    height 0.5s;
+}
